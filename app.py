@@ -18,7 +18,7 @@ def update():
     for tag in soup.find_all('g:item_group_id'):
         tag.string = '505820'
     for tag in soup.find_all('g:google_product_category'):
-        tag.string = 'Health & Beauty > Health Care > Conductivity Gels & Lotions'
+        tag.string = 'Conductivity Gels & Lotions'
     with open('new_file.xml', 'w', encoding='utf-8') as file:
         file.write(str(soup.prettify()))
     return 'Update completed'
