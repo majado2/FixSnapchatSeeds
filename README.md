@@ -1,46 +1,40 @@
-# # Project Description
+Sure, here is how your `README.md` file might look in English:
 
-This Python script is designed to fetch an XML file from a specified URL, modify specific XML tags and save the updated XML content into a new file.
+```
+# XML Feed Modifier
+This project is used to modify XML feeds served on a web server. The code is written in Python and uses the BeautifulSoup library for parsing and modifying the files, and the Flask library for setting up the web application.
 
-## Features
+## Requirements
+To run this project, you will need to install the following dependencies:
 
-- Fetches an XML file from a specified URL using `requests`.
-- Uses `BeautifulSoup` for parsing and manipulating the XML content.
-- Modifies the content of the `g:item_group_id` tags to a specified value.
-- Modifies the content of the `g:google_product_category` tags to a specified value.
-- Saves the modified XML content into a new file with utf-8 encoding.
+- Python 3
+- BeautifulSoup4
+- Flask
+- requests
+
+You can install these dependencies using pip:
+
+```
+pip install -r requirements.txt
+```
 
 ## Usage
-
-1. Ensure that you have Python 3.x installed on your machine. The script was written and tested with Python 3.10, but it should work with other Python 3 versions.
-
-2. Install the required Python packages if you have not done so already. You can do this by running the following command in your terminal:
+First, run `generate.py` to download, parse, modify an XML file, and save the result:
 
 ```
-pip install beautifulsoup4 requests
+python generate.py
 ```
 
-3. Clone the project or download the Python script file to your local machine.
-
-4. Run the script by navigating to the directory containing the script and typing the following in your terminal:
+Then, you can run `app.py` to start the application which will serve the modified file when accessed at the root of the application:
 
 ```
-python your_script.py
+python app.py
 ```
-Replace `your_script.py` with the name of the script file.
 
-The script will download the XML file, perform the modifications, and save the updated content into a new file named 'new_file.xml'.
-
-## Scheduled Execution
-
-If you want to run this script automatically on a schedule (e.g., every hour), you can use a tool like cron on Unix/Linux systems or Task Scheduler on Windows systems. Please refer to the documentation for these tools for detailed instructions on how to set this up.
+The application will be available at `http://localhost:5000` (or whichever IP address you specify).
 
 ## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+```
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Above the code blocks, there should be a blank line for it to be rendered properly on GitHub. Ensure all code and formatted text are between three backticks (\```) for code block marking.
