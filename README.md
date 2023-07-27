@@ -1,41 +1,54 @@
-```markdown
-# XML Feed Modifier
+Sure, here is an example of how you can structure your README file:
 
-This project is used for modifying XML feeds served on a web server. The code is written in Python and uses the BeautifulSoup library for parsing and modifying the feeds, and the Flask library for setting up the web application.
+# Snapchat Seeds Fixer
 
-## Requirements
+This project aims to update XML data from a specific URL and host the modified data on a new endpoint. 
 
-To run this project, you will need to install the following dependencies:
+## Installation
 
-- Python 3
-- BeautifulSoup4
-- Flask
-- requests
+1. Clone the repository
+    ```
+    git clone https://github.com/majado2/FixSnapchatSeeds.git
+    ```
 
-You can install these dependencies using pip:
+2. Change into the directory
+    ```
+    cd FixSnapchatSeeds
+    ```
 
-```shell
-pip install -r requirements.txt
+3. Install the dependencies
+    ```
+    pip install -r requirements.txt
+    ```
+
+## Running the Server
+
+To run the server, execute the following command:
+
+```
+python app.py
 ```
 
 ## Usage
 
-First, run `generate.py` to download, parse, modify the XML file and save the result:
+1. To view the modified XML data, navigate to the main page `http://localhost:8080/`.
 
-```shell
-python generate.py
-```
+2. To update the XML data from the source, navigate to the update page `http://localhost:8080/update`.
 
-After that, you can run `app.py` to start the application that will serve the modified file when accessing the application's home page:
+## License
 
-```shell
-python app.py
-```
-
-The application will be available on `http://localhost:5000` (or whichever IP address you specify).
+This project is licensed under the MIT License.
 
 ## Contributing
 
-Your contributions are welcome! Please feel free to submit a Pull Request.
-```
-Above the code, there should be a blank line at the beginning of the file. To render properly on GitHub, make sure all code and indented text is between the triple backtick (```) code fencing marks.
+If you wish to contribute, please feel free to fork the repository and submit a pull request. 
+
+## Contact
+
+If you have any questions, please open an issue or submit a pull request.
+
+Note: This project was created for educational purposes and is not affiliated with Snapchat.
+
+## Acknowledgments
+
+* The XML data is sourced from [rodastore.com](https://rodastore.com/).
